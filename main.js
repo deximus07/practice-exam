@@ -12,7 +12,7 @@ let Students = function(name, codeClass, languageSkills){
 //Instatiating some constructor properties
 if(localStorage.length > 0){
     let getData = localStorage.getItem('studentStorage')
-   // studentArray = JSON.parse(getData)
+    studentArray = JSON.parse(getData)
 }else{
     let studentOne = new Students('Adrian', 'Code Partners', 'HTML, CSS, JS')
     let studentTwo = new Students('Ana', 'Code Partners', 'HTML, CSS, JS')

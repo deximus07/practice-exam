@@ -8,29 +8,36 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Code Partners Original</h1>
-    
-    <table id="table"></table>
-    <h2>Enroll Individuals:</h2>
 
-    <div id="form-div">
+    <div id="article">
+        <h1>Code Partners Original</h1><br><br>
 
-        <form id="form">
-            <h3 class="name">Name:</h4>
-            <input name="student-name" required onfocus="this.value=''">
+        <div id="tablediv">
+            <h2>Student List:</h2>
+            <table id="table"></table>
+        </div>
+        
 
-            <h3 id="class">Class Attended:</h3>
-            <input name="code-class" required onfocus="this.value=''">
+        <div id="form-div">
+            <h2 id="enroll">Enroll Individuals:</h2>
+            <form id="form">
+                <h3 class="name">Name:</h4>
+                <input name="studentName" required onfocus="this.value=''">
 
-            <h3 id="language">Language Skills:</h3>
-            <input name="language-skills" required onfocus="this.value=''">
+                <h3 id="class">School Attended:</h3>
+                <input name="codeClass" required onfocus="this.value=''">
 
-            <button id="submit-button" type='submit'>Enroll</button>
-            
-            <button id="reset-button">Clear Form</button>
-        </form>
+                <h3 id="language">Language Skills:</h3>
+                <input name="languageSkills" required onfocus="this.value=''"><br>
 
+                <button id="submitButton" type="submit">Enroll</button>
+                
+                <button id="resetButton" type="reset">Clear</button>
+            </form>
+
+        </div>
     </div>
+
 <script src="./main.js"></script>
 </body>
 </html>
